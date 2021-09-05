@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="build/compiled.css">
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-200 h-auto lg:overflow-y-hidden">
+    <div class="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1  lg:grid-cols-2 lg:grid-rows-1 h-auto">
+        <!-- phone -->
+        <div class="w-full h-130 md:h-screen lg:h-screen relative mb-10">
+            <!-- background -->
+            <div class="h-90vh w-196 absolute transform -translate-x-1/2 lg:translate-x-0 lg:left-0 lg:h-90vh bg-gradient-to-b from-light-magenta to-light-violet  rounded-bl-full rounded-br-full "></div>
+
+            <!-- mobile phone design -->
+            <div class="absolute transform left-1/2 -translate-x-1/2 top-10 lg:-translate-x-10 md:top-44 lg:top-44 lg:left-2/3 w-80 h-auto rounded-3xl p-4 bg-white">
+                <div class="w-full h-full rounded-3xl flex flex-col overflow-hidden">
+                    <!-- topbar -->
+                    <div class="relative flex items-center w-full bg-gradient-to-r from-light-violet to-light-magenta h-24 px-5 py-8">
+                        <div class="absolute w-40 h-7 bg-white left-50 -top-2 transform -translate-x-1/2 rounded-full"></div>
+                        <div class="flex items-center mt-2">
+                            <!-- arrowback -->
+                            <div class="flex flex-col cursor-pointer">
+                                <span class="w-2.5 h-0.5 bg-white mb-1 transform -rotate-45"></span>
+                                <span class="w-2.5 h-0.5 bg-white transform rotate-45"></span>
+                            </div>
+                            <!-- avatar -->
+                            <div class="p-0.5 rounded-full border-2 border-white ml-4 w-10 overflow-hidden">
+                                <img src="images/avatar.jpg" alt="" class="w-full rounded-full">
+                            </div>
+                            <!-- name -->
+                            <div class="ml-2 flex flex-col text-white">
+                                <p class="text-sm font-medium font-rubik">Samuel Green</p>
+                                <span class="text-xs opacity-60">Available to Walk</span>
+                            </div>
+                            <!-- menu -->
+                            <div class="ml-12 flex flex-col cursor-pointer px-3">
+                                <span class="w-1 h-1 bg-white rounded-full mt-2 mb-1"></span>
+                                <span class="w-1 h-1 bg-white rounded-full mb-1"></span>
+                                <span class="w-1 h-1 bg-white rounded-full"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- body -->
+                    <div class="h-auto w-full bg-red-300 p-3 bg-app-background flex flex-col">
+                        <!-- first chatbox -->
+                        <div class="w-44 h-12 rounded-xl p-2 text-xs text-chat-left bg-purple-200">That sounds great. I’d be happy with that.</div>
+                        <!-- second chatbox -->
+                        <div class="mt-2 w-48 h-12 rounded-xl p-2 text-xs text-chat-left bg-purple-200">Could you send over some pictures of your dog, please?</div>
+                        <!-- third chatbox -->
+                        <div class="self-end mt-2 w-auto h-12 text-chat-left flex">
+                            <img src="images/dog-image-1.jpg" alt="" class="w-12 rounded-2xl mr-2">
+                            <img src="images/dog-image-2.jpg" alt="" class="w-12 rounded-2xl mr-2">
+                            <img src="images/dog-image-3.jpg" alt="" class="w-12 rounded-2xl">
+                        </div>
+                        <!-- fouth chatbox -->
+                        <div class="mt-2 w-48 h-12 rounded-xl p-2 text-xs text-chat-right bg-white self-end">Here are a few pictures. She’s a happy girl!</div>
+                        <!-- fifth chatbox -->
+                        <div class="mt-2 w-auto h-9 rounded-xl p-2 text-xs text-chat-right bg-white self-end">Can you make it?</div>
+                        <!-- 6 -->
+                        <div class="w-44 h-auto rounded-xl p-2 text-xs text-chat-left bg-purple-200 mt-2">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+                        <!-- 7 -->
+                        <div class="w-44 h-auto rounded-xl p-2 text-xs text-chat-left bg-gradient-to-r from-light-magenta to-light-violet mt-2 flex items-center">
+                            <div class="w-4 h-4 rounded-full border-2 border-white opacity-50"></div>
+                            <p class="pl-1 text-purple-200">30 minute walk</p>
+                            <span class="text-purple-200 font-bold font-rubik text-lg ml-auto">$29 </span>
+                        </div>
+                        <div class="w-44 h-auto rounded-xl p-2 text-xs text-chat-left bg-gradient-to-r from-light-magenta to-light-violet mt-2 flex items-center">
+                            <div class="w-4 h-4 rounded-full border-2 border-white opacity-50"></div>
+                            <p class="pl-1 text-purple-200 ">1 hour walk</p>
+                            <span class="text-purple-200 font-bold font-rubik text-lg ml-auto">$49 </span>
+                        </div>
+                        <!-- textfield -->
+                        <div class="mt-5 px-2 relative">
+                            <div class="w-full px-4 py-3 mb-1 rounded-full bg-white flex justify-between items-center">
+                                <input type="text" placeholder="Type a message..." class="outline-none">
+                                <div class="w-8 h-8 bg-purple-700 rounded-full flex flex-col items-center justify-center cursor-pointer">
+                                    <div class="flex flex-col">
+                                        <span class="w-2.5 h-0.5 bg-white mb-1 transform rotate-45"></span>
+                                        <span class="w-2.5 h-0.5 bg-white transform -rotate-45"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- words -->
+        <div class="w-full h-screen relative overflow-x-hidden mt-10">
+            <!-- background -->
+            <div class="absolute -right-1/2 lg:right-0 lg:bottom-0 bottom-0 h-90vh bg-gradient-to-b from-light-magenta to-light-violet w-196 rounded-tl-full rounded-tr-full opacity-10 align-middle"></div>
+            <div class="flex flex-col justify-center items-start h-full ml-10 lg:ml-24 mr-10">
+                <h3 class="text-left font-bold text-3xl lg:text-5xl text-heading mb-10">Simple booking</h3>
+                <p class="text-left text-lg leading-10 text-paragraph">Stay in touch with our dog walkers through the chat interface. This makes it easy to discuss arrangements and make bookings. Once the walk has been completed you can rate your walker and book again all through the chat.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</body>
+
+</html>
